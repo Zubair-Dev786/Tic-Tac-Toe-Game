@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh; */
+            background-color: darkgreen;
+        }
+        h1{
+            color: black;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: sans-serif;
+        }
+        .container{
+            height: 459px;
+            width: 450px;
+            border: 2px solid black;
+            background-color: lightgreen;
+            margin-top: 30px;
+            margin-left: 470px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid black; */
+        }
+        .column{
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column" id="box1" onclick="game('box1')" ></div>
+            <div class="column" id="box2" onclick="game('box2')"></div>
+            <div class="column" id="box3" onclick="game('box3')"></div>
+        </div>
+        <div class="row">
+            <div class="column" id="box4" onclick="game('box4')"></div>
+            <div class="column" id="box5" onclick="game('box5')"></div>
+            <div class="column" id="box6" onclick="game('box6')"></div>
+        </div>
+        <div class="row">
+            <div class="column" id="box7" onclick="game('box7')"></div>
+            <div class="column" id="box8" onclick="game('box8')"></div>
+            <div class="column" id="box9" onclick="game('box9')"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
